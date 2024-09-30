@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cheap.thrills.fonts.TextViewGotham
+        android:id="@+id/tvTicketOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_24sdp"
+        android:text="@string/_2018_3_park_explorer_adult_sc_y"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_20sdp" />
+
+    <cheap.thrills.fonts.TextViewArialRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:text="@string/tokendetails"
+        android:textColor="@color/colorBlack" />
+</LinearLayout>

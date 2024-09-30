@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#036CE2</color>
+    <color name="colorPrimaryDark">#FF014FA7</color>
+    <color name="colorAccent">#036CE2</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#c6c1c2</color>
+    <color name="colorTextGrey">#636161</color>
+    <color name="colorVVVGrey">#FFE7E7E7</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#34C759</color>
+    <color name="colorTextBlue">#1275E8</color>
+<color name="colorWalletHeading">#FF3E3D3D</color>
+    <color name="coloricon">#AEABA9</color>
+    <!-- dots active colors -->
+    <color name="colorHeading">#383434</color>
+    <color name="qrcode">#9E9797</color>
+    <color name="light_yellow">#EC8A2B</color>
+    <color name="bg_red">#EE2025</color>
+    <color name="bg_blue">#3B4CA0</color>
+
+    <color name="bg_et">#DDDEE2</color>
+
+    <!-- dots inactive colors -->
+
+
+</resources>

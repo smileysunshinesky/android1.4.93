@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        app:titleTextColor="@color/colorWhite">
+
+        <cheap.thrills.fonts.TextViewArialDoubleBold
+            android:id="@+id/tvToolBarTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/signIn11"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newk"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="@string/titlecreateanAccount"
+                android:textColor="@color/colorTextBlue"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <cheap.thrills.fonts.TextViewArialBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/emailAddress"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <cheap.thrills.fonts.EditTextArialMedium
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedrectangles"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <cheap.thrills.fonts.TextViewArialBold
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/password"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <cheap.thrills.fonts.EditTextArialMedium
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedrectangles"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <cheap.thrills.fonts.TextViewArialBold
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp">
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <cheap.thrills.fonts.TextViewArialRegular
+                android:id="@+id/tvTextCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/checkboxRememberMe"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+
+        <cheap.thrills.fonts.ButtonArialMedium
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/roundedrectangles"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/SignIn"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

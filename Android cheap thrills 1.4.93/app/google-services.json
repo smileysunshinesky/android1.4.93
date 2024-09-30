@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "445489592698",
+    "firebase_url": "https://jammin92-675fc.firebaseio.com",
+    "project_id": "jammin92-675fc",
+    "storage_bucket": "jammin92-675fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445489592698:android:41b4ed69ace1866b327ec3",
+        "android_client_info": {
+          "package_name": "cheap.thrills"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445489592698-03kcdcfcrs875e5pkr5956msbfght1a6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_66OyW0H-3adX4X2Ukfnr96tlGkAumy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445489592698-03kcdcfcrs875e5pkr5956msbfght1a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog">
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:tint="@android:color/holo_red_dark" />
+
+        <cheap.thrills.fonts.TextViewArialRegular
+            android:id="@+id/tvOops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivCancel"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="@string/somethingWentWrong"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/_16sdp" />
+
+        <cheap.thrills.fonts.TextViewArialMedium
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvOops"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/ok"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/colorTextBlue"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

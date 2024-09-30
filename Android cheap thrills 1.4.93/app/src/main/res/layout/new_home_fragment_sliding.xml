@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/colorGrey"
+        android:gravity="top"
+        sothree:umanoPanelHeight="@dimen/_190sdp"
+        sothree:umanoShadowHeight="@dimen/_4sdp">
+
+
+        <LinearLayout
+            android:id="@+id/centerAnimLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:background="@color/colorVVVGrey"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_weight="0.6"
+                        android:background="@color/colorGrey"></View>
+
+                    <cheap.thrills.fonts.TextViewArialBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:gravity="center"
+                        android:text="@string/choosepark"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_weight="0.6"
+                        android:background="@color/colorGrey"></View>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/firstLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_65sdp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/nav_header_desc"
+                            android:src="@drawable/icon_island" />
+
+                        <cheap.thrills.fonts.TextViewArialBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/timing1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorTextGrey"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/secondLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_65sdp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/nav_header_desc"
+                            android:src="@drawable/icon_universal" />
+
+                        <cheap.thrills.fonts.TextViewArialBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/Submit"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorTextGrey"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/thirdLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_65sdp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/nav_header_desc"
+                            android:src="@drawable/icon_volcano" />
+
+                        <cheap.thrills.fonts.TextViewArialBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/timing3"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorTextGrey"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"></View>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topParentLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.9"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/layoutTopHeaderLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--weight=2.4 height: 0dp-->
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:gravity="bottom"
+                    android:visibility="gone"
+                    app:centered="true"
+                    app:fillColor="@color/colorWhite"
+                    app:pageColor="@color/colorGrey"
+                    app:snap="false" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/icon_shadow"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/rideLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:src="@drawable/icon_ride" />
+
+                    <cheap.thrills.fonts.TextViewArialMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/rides"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrey"></View>
+
+                <LinearLayout
+                    android:id="@+id/showsLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+
+                        android:contentDescription="@string/nav_header_desc"
+                        android:src="@drawable/icon_shows" />
+
+                    <cheap.thrills.fonts.TextViewArialMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/shows"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrey"></View>
+
+                <LinearLayout
+                    android:id="@+id/diningLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+
+                        android:contentDescription="@string/nav_header_desc"
+                        android:src="@drawable/icon_dining" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/dining"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrey"></View>
+
+                <LinearLayout
+                    android:id="@+id/buyTicketsLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+
+                        android:contentDescription="@string/nav_header_desc"
+                        android:src="@drawable/icon_tickets" />
+
+                    <cheap.thrills.fonts.TextViewArialMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/buy_tickets"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/sliding_layout"
+        android:layout_weight="1.1"
+        android:orientation="vertical"
+        android:background="@drawable/back_home">
+
+        <LinearLayout
+            android:id="@+id/llMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mapnotcut"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <cheap.thrills.fonts.TextViewArialDoubleBold
+                android:id="@+id/txtLeftTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/explore_the"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_location_24dp"
+                app:backgroundTint="@color/colorAccent"
+                app:elevation="@dimen/_6sdp"
+                app:pressedTranslationZ="@dimen/_12sdp" />
+
+            <cheap.thrills.fonts.TextViewArialDoubleBold
+                android:id="@+id/txtRightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/resort_map"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivSignIn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/icon_wallet_circle" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/createToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:background="@color/colorPrimary">
+
+        <cheap.thrills.fonts.TextViewArialDoubleBold
+            android:id="@+id/tvToolBarTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/createAcoount"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <cheap.thrills.fonts.TextViewArialBold
+                    android:id="@+id/tvAlreadyAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="@string/alreadyHaveAccount"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+                <cheap.thrills.fonts.TextViewArialBold
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/signIn"
+                    android:textColor="@color/colorTextBlue"
+                    android:textSize="@dimen/_17sdp" />
+
+
+            </LinearLayout>
+
+            <cheap.thrills.fonts.TextViewArialMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="@string/fieldsRequired"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp" />
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/firstName"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <cheap.thrills.fonts.EditTextArialMedium
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/roundedrectangles"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true" />
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/lastName"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <cheap.thrills.fonts.EditTextArialMedium
+                android:id="@+id/etLastname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/roundedrectangles"
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true" />
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/emailAddress"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <cheap.thrills.fonts.EditTextArialMedium
+                android:id="@+id/etEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/roundedrectangles"
+
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp" />
+
+            <cheap.thrills.fonts.TextViewArialBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/password"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <cheap.thrills.fonts.EditTextArialMedium
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/roundedrectangles"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbCheckBoxUpdates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <cheap.thrills.fonts.TextViewArialRegular
+                    android:id="@+id/tvTextCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/tvCheckBox"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbCheckBoxTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <cheap.thrills.fonts.TextViewArialRegular
+                            android:id="@+id/tvTextCheckBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:text="@string/checkboxTermsandPrivacy"
+                            android:textColor="@color/colorBlack" />
+
+                        <cheap.thrills.fonts.TextViewArialRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:text="@string/stringterms"
+
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp">
+
+                        <cheap.thrills.fonts.TextViewArialRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:text="@string/and"
+                            android:textColor="@color/colorBlack" />
+
+                        <cheap.thrills.fonts.TextViewArialRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/privacypolicy"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <cheap.thrills.fonts.ButtonArialMedium
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/roundedrectangles"
+                android:backgroundTint="@color/colorTextBlue"
+                android:text="@string/createAcoount"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"></View>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

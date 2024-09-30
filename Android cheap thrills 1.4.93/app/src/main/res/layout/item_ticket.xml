@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="12dp"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        android:background="@drawable/bg_shadow">
+
+        <cheap.thrills.fonts.TextViewArialBold
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="This is Your Ticket \nProceed to The park"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <cheap.thrills.fonts.TextViewArialMedium
+            android:id="@+id/tvThemePark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SeaWorld Orlando"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0" />
+
+        <ImageView
+            android:id="@+id/ivBarcode"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvThemePark"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".9" />
+
+        <cheap.thrills.fonts.TextViewArialBold
+            android:id="@+id/tvTicketNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="8569 53215 99856 4578"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBarcode"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <cheap.thrills.fonts.TextViewArialBold
+            android:id="@+id/tvAttendee"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Attendee 12"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_attendee"
+            android:paddingStart="6dp"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTicketNo"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".9"/>
+
+        <cheap.thrills.fonts.TextViewHandelGothic
+            android:id="@+id/tvRedemption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_redemption"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAttendee"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent=".9" />
+
+        <TextView
+            android:id="@+id/tvStep1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/munaqqat_for_kids"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRedemption"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".9"  />
+
+
+
+        <cheap.thrills.fonts.TextViewHandelGothic
+            android:id="@+id/tLegalTerms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:background="@drawable/bg_lt"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStep1"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".9"  />
+
+        <TextView
+            android:fontFamily="@font/munaqqat_for_kids"
+            android:id="@+id/tvLT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tLegalTerms"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".9"  />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
